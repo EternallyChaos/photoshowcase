@@ -25,41 +25,62 @@ const Page = () => {
       </div>
       <div className="flex-1">
         <div className="flex flex-col justify-center items-center p-20 text-center">
-          <h3>Common Questions</h3>
-          <div className="mt-12">
-            <p className="font-semibold text-2xl">How do I inquire?</p>
-            <p className="max-w-lg mt-4">
+          <h3 className="text-sm text-center font-bold uppercase text-gray-600">
+            Common Questions
+          </h3>
+          <div className="mt-16">
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
+              How do I inquire?
+            </p>
+            <p className="max-w-xl mt-4 text-gray-600">
               Email us and let’s learn more about each other -
               info@nordicaphotography.com
             </p>
           </div>
-          <div className="mt-12">
-            <p className="font-semibold text-2xl">How do I inquire?</p>
-            <p className="max-w-lg mt-4">
-              Email us and let’s learn more about each other -
+          <div className="mt-16">
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
+              What are your prices?
+            </p>
+            <p className="max-w-xl mt-4 text-gray-600 text-center">
+              We can provide you collection information when you contact us -
               info@nordicaphotography.com
             </p>
           </div>
-          <div className="mt-12">
-            <p className="font-semibold text-2xl">How do I inquire?</p>
-            <p className="max-w-lg mt-4">
-              Email us and let’s learn more about each other -
-              info@nordicaphotography.com
+          <div className="mt-16">
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
+              Do you work internationally?
+            </p>
+            <p className="max-w-xl mt-4 text-gray-600 text-center">
+              Yes. We’ve documented hundreds of weddings since going full-time
+              in 2009, and the majority have been international.
             </p>
           </div>
-          <div className="mt-12">
-            <p className="font-semibold text-2xl">How do I inquire?</p>
-            <p className="max-w-lg mt-4">
-              Email us and let’s learn more about each other -
-              info@nordicaphotography.com
+          <div className="mt-16">
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
+              Do you do elopements or non-wedding sessions?
+            </p>
+            <p className="max-w-xl mt-4 text-gray-600 text-center">
+              Definitely. Email us if you’re curious about our approach with
+              this.
             </p>
           </div>
-
-          <div className="mt-12">
-            <p className="font-semibold text-2xl">How do I inquire?</p>
-            <p className="max-w-lg mt-4">
-              Email us and let’s learn more about each other -
-              info@nordicaphotography.com
+          <div className="mt-16">
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
+              How many photos do you deliver?
+            </p>
+            <p className="max-w-xl mt-4 text-gray-600 text-center">
+              The average is between 600 and 800 images for a full-day wedding.
+              Images are delivered digitally in a mix of colour and black and
+              white.
+            </p>
+          </div>
+          <div className="mt-16">
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
+              Do you offer hourly wedding coverage?
+            </p>
+            <p className="max-w-xl mt-4 text-gray-600 text-center">
+              Yes. However, storytelling is best achieved via all day coverage
+              and 95% of the couples who book us choose unlimited hours.
             </p>
           </div>
         </div>

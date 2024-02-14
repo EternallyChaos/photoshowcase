@@ -22,7 +22,7 @@ const VideoModal = ({ isOpen, setIsOpen, videoId }) => {
       </div> */}
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -35,7 +35,7 @@ const VideoModal = ({ isOpen, setIsOpen, videoId }) => {
             <div className="fixed inset-0 bg-gray-700 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed  z-30 inset-0 overflow-y-auto">
+          <div className="fixed z-30 inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
@@ -46,8 +46,8 @@ const VideoModal = ({ isOpen, setIsOpen, videoId }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full mt-28 h-[85vh] z-10 transform overflow-hidden bg-gray-400 mx-4 p-4 text-left align-middle shadow-xl transition-all">
-                  <div className="flex justify-between">
+                <Dialog.Panel className="w-full h-full z-10 transform overflow-hidden bg-gray-400 p-6 text-left align-middle shadow-xl transition-all">
+                  <div className="flex items-center justify-between mb-2">
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-gray-900"
@@ -57,7 +57,7 @@ const VideoModal = ({ isOpen, setIsOpen, videoId }) => {
                     <div className="">
                       <button
                         type="button"
-                        className="inline-flex justify-center mb-2 rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium"
                         onClick={closeModal}
                       >
                         Close Film
@@ -65,12 +65,8 @@ const VideoModal = ({ isOpen, setIsOpen, videoId }) => {
                     </div>
                   </div>
                   <iframe
-                    width="100%"
-                    height="95%"
+                    className="w-full h-[90vh] aspect-auto"
                     src={`https://www.youtube.com/embed/${videoId}`}
-                    title="YouTube video player"
-                    allow=""
-                    allowFullScreen
                   ></iframe>
                 </Dialog.Panel>
               </Transition.Child>

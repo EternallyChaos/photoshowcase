@@ -10,12 +10,12 @@ const Header = () => {
 
   return (
     <header>
-      <div className="fixed w-full z-40">
+      <div className="fixed w-full z-30">
         <div className="flex justify-between">
           <div className="flex">
             <div className="absolute logo bg-transparent text-5xl font-bold text-black mix-blend-screen px-2 "></div>
           </div>
-          <div className="bg-gray-300 z-50">
+          <div className="bg-gray-300 z-40">
             <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
           </div>
         </div>

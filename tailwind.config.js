@@ -7,12 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        "manrope-medium": "var(--font-manrope)",
+        "inter-medium": "var(--font-inter)",
+        "crimsonPro-medium": "var(--font-crimsonPro)",
+        "ptSerif-medium": "var(--font-ptSerif)",
       },
     },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 };

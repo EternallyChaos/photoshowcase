@@ -29,7 +29,7 @@ const Page = () => {
         <Image
           alt="img"
           src={Homer}
-          className="object-center object-cover h-screen"
+          className="w-full object-center object-cover h-screen"
         />
         <div className="absolute bottom-0 left-0 right-0 top-0 grid place-items-center text-white text-center">
           <div>
@@ -38,20 +38,30 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 flex flex-col items-center justify-center">
+      <div className="mt-12 flex flex-col items-center justify-center p-4">
         <div className="max-w-xl">
           <div>
-            <p className="text-sm text-center">Elopement</p>
-            <p className="text-lg">Paradise in the Arctic</p>
+            <p className="text-sm text-center font-bold uppercase text-gray-600">
+              Elopement
+            </p>
+            <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-4xl text-gray-500">
+              Paradise in the Arctic
+            </p>
           </div>
         </div>
-        <div className="mt-4 max-w-2xl">
-          Lofoten is one of the world’s most incredible archipelagos, with a
-          string of islands so beautiful it’s surreal. The village of Svolvær,
-          with its serene nature and seclusion, made for a magical backdrop to
-          host the story of Sirena and Eric. We felt taunted by the beautiful
-          photos of northern Norway, and specifically by the unique landscape of
-          the Lofoten Islands. – Sirena and Eric
+        <div className="mt-4 max-w-2xl text-gray-600">
+          <p>
+            Lofoten is one of the world’s most incredible archipelagos, with a
+            string of islands so beautiful it’s surreal.
+          </p>
+          <p className="mt-3">
+            The village of Svolvær, with its serene nature and seclusion, made
+            for a magical backdrop to host the story of Sirena and Eric.
+          </p>
+          <p className="mt-3">
+            We felt taunted by the beautiful photos of northern Norway, and
+            specifically by the unique landscape of the Lofoten Islands.
+          </p>
         </div>
       </div>
       <div className="mt-12 flex flex-col items-center justify-center mx-auto">

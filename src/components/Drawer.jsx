@@ -24,7 +24,7 @@ const routes = [
 const Drawer = ({ isOpen, setOpen }) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Dialog as="div" className="relative z-40" onClose={setOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
@@ -60,15 +60,15 @@ const Drawer = ({ isOpen, setOpen }) => {
                     leaveTo="opacity-0"
                   >
                     <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
-                      <button
+                      {/* <button
                         type="button"
                         className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
                         onClick={() => setOpen(false)}
                       >
                         <span className="absolute -inset-2.5" />
                         <span className="sr-only">Close panel</span>
-                        {/* <XMarkIcon className="h-6 w-6" aria-hidden="true" /> */}
-                      </button>
+                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                      </button> */}
                     </div>
                   </Transition.Child>
                   <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
