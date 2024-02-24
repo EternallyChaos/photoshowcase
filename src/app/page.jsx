@@ -58,7 +58,7 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full">
-        <MapChart data={CouplesInfo}/>
+        <MapChart data={CouplesInfo} />
       </div>
       <div className="mt-12 w-full">
         <ImageSignature imageSrc={ImageOne} text="Eric and Leana" />
