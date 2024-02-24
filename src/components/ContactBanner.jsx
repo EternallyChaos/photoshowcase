@@ -25,7 +25,7 @@ const ContactBanner = ({ bannerImage }) => {
               href="/contact"
               className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
-              Contact Me
+              Contact Us
             </Link>
           </div>
         </div>

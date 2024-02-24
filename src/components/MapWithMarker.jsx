@@ -49,7 +49,11 @@ const MapChart = ({ data }) => {
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [-80, -18, 0],
-        scale: 650,
+        scale: 800,
+      }}
+      style={{
+        width: "100%",
+        height: "auto",
       }}
     >
       <Geographies geography={geoUrl}>

@@ -11,7 +11,7 @@ const LogoIcon = () => {
         height={0}
         width={0}
         sizes="100vw"
-        className="w-60 lg:w-72"
+        className="w-40 md:w-44 lg:w-64"
       />
     </Link>
   );

@@ -68,29 +68,39 @@ export default function Home() {
         <MapChart data={CouplesInfo} />
       </div>
       <div className="w-full">
-        <ContactBanner bannerImage={HimachalImageFour}/>
+        <ContactBanner bannerImage={HimachalImageFour} />
       </div>
       <div className="mt-12 w-full">
-        <ImageSignature imageSrc={GoaImageOne} text="Sagar and Saheli" />
+        <ImageSignature
+          imageSrc={GoaImageOne}
+          text="Sagar and Saheli"
+          path="sagar-saheli"
+        />
         <div className="w-full mt-4 lg:p-12">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <div className="max-w-3xl">
               <ImageSignature
                 imageSrc={HimachalImageOne}
                 text="Pinky and Satyaki"
+                path="pinky-satyaki"
               />
             </div>
             <div className="max-w-3xl">
               <ImageSignature
                 imageSrc={KolkataImageOne}
                 text="Karl and Bhavika"
+                path="karl-bhavika"
               />
             </div>
           </div>
         </div>
       </div>
       <div className="mt-12 w-full">
-        <ImageSignature imageSrc={OdishaImageOne} text="Aayush and Shweta" />
+        <ImageSignature
+          imageSrc={OdishaImageOne}
+          text="Aayush and Shweta"
+          path="aayush-shweta"
+        />
         {/* <div className="w-full p-12">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <div className="flex-1 max-w-3xl">
