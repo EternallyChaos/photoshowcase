@@ -11,6 +11,7 @@ import ImageFive from "/public/pexels-pixabay-219776.jpg";
 import ImageSignature from "@/components/ImageSignature";
 import VideoModal from "@/components/VideoModal";
 import MapChart from "@/components/MapWithMarker";
+import { CouplesInfo } from "@/data/CouplesInfo";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +58,7 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full">
-        <MapChart />
+        <MapChart data={CouplesInfo}/>
       </div>
       <div className="mt-12 w-full">
         <ImageSignature imageSrc={ImageOne} text="Eric and Leana" />
