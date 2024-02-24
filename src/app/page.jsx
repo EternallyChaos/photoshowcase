@@ -12,6 +12,7 @@ import HimachalImageOne from "/public/himachal/1.jpg";
 import OdishaImageOne from "/public/odisha/1.jpg";
 import KolkataImageOne from "/public/kolkata/1.jpg";
 import GoaImageOne from "/public/goa/1.jpg";
+import HimachalImageFour from "/public/himachal/4.jpg";
 
 import ImageSignature from "@/components/ImageSignature";
 import VideoModal from "@/components/VideoModal";
@@ -67,7 +68,7 @@ export default function Home() {
         <MapChart data={CouplesInfo} />
       </div>
       <div className="w-full">
-        <ContactBanner />
+        <ContactBanner bannerImage={HimachalImageFour}/>
       </div>
       <div className="mt-12 w-full">
         <ImageSignature imageSrc={GoaImageOne} text="Sagar and Saheli" />

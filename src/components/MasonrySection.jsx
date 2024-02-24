@@ -32,7 +32,7 @@ const MasonrySection = ({ slides, setIndex }) => {
                 height={0}
                 sizes="100vw"
                 className="w-full h-auto rounded-lg"
-                onClick={() => setIndex(index + 3)}
+                onClick={() => setIndex(index + 2)}
               />
             );
           })}
@@ -49,7 +49,7 @@ const MasonrySection = ({ slides, setIndex }) => {
               height={0}
               sizes="100vw"
               className="w-full h-auto rounded-lg"
-              onClick={() => setIndex(5)}
+              onClick={() => setIndex(4)}
             />
           );
         })}

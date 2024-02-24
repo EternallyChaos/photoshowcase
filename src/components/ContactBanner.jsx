@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-const ContactBanner = () => {
+const ContactBanner = ({ bannerImage }) => {
   return (
     <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
@@ -29,12 +30,16 @@ const ContactBanner = () => {
           </div>
         </div>
       </div>
-
-      <img
-        alt=""
-        src="https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-      />
+      <div className="p-4">
+        <Image
+          alt="banner"
+          src={bannerImage}
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
     </section>
   );
 };
