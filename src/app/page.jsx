@@ -8,10 +8,16 @@ import ImageThree from "/public/pexels-jeremy-wong-1043902.jpg";
 import ImageFour from "/public/pexels-min-an-752842.jpg";
 import ImageFive from "/public/pexels-pixabay-219776.jpg";
 
+import HimachalImageOne from "/public/himachal/1.jpg";
+import OdishaImageOne from "/public/odisha/1.jpg";
+import KolkataImageOne from "/public/kolkata/1.jpg";
+import GoaImageOne from "/public/goa/1.jpg";
+
 import ImageSignature from "@/components/ImageSignature";
 import VideoModal from "@/components/VideoModal";
 import MapChart from "@/components/MapWithMarker";
 import { CouplesInfo } from "@/data/CouplesInfo";
+import ContactBanner from "@/components/ContactBanner";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,22 +66,31 @@ export default function Home() {
       <div className="w-full">
         <MapChart data={CouplesInfo} />
       </div>
+      <div className="w-full">
+        <ContactBanner />
+      </div>
       <div className="mt-12 w-full">
-        <ImageSignature imageSrc={ImageOne} text="Eric and Leana" />
+        <ImageSignature imageSrc={GoaImageOne} text="Sagar and Saheli" />
         <div className="w-full mt-4 lg:p-12">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <div className="max-w-3xl">
-              <ImageSignature imageSrc={ImageTwo} text="Eric and Leana" />
+              <ImageSignature
+                imageSrc={HimachalImageOne}
+                text="Pinky and Satyaki"
+              />
             </div>
             <div className="max-w-3xl">
-              <ImageSignature imageSrc={ImageThree} text="Eric and Leana" />
+              <ImageSignature
+                imageSrc={KolkataImageOne}
+                text="Karl and Bhavika"
+              />
             </div>
           </div>
         </div>
       </div>
       <div className="mt-12 w-full">
-        <ImageSignature imageSrc={ImageFour} text="Eric and Leana" />
-        <div className="w-full p-12">
+        <ImageSignature imageSrc={OdishaImageOne} text="Aayush and Shweta" />
+        {/* <div className="w-full p-12">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <div className="flex-1 max-w-3xl">
               <ImageSignature imageSrc={ImageFive} text="Eric and Leana" />
@@ -84,7 +99,7 @@ export default function Home() {
               <ImageSignature imageSrc={HomeImage} text="Eric and Leana" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

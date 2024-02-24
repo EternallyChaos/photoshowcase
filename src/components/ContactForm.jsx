@@ -15,8 +15,8 @@ const ContactForm = () => {
         </div>
 
         <div className="mx-auto md:w-2/3 lg:w-1/2">
-          <div className="-m-2 flex flex-wrap">
-            <div className="w-1/2 p-2">
+          <div className="flex flex-col">
+            <div className="p-2">
               <div className="relative">
                 <input
                   type="text"
@@ -33,8 +33,8 @@ const ContactForm = () => {
                 </label>
               </div>
             </div>
-            <div className="w-1/2 p-2">
-              {/* <div className="relative">
+            <div className="mt-3 flex gap-4 p-2">
+              <div className="relative">
                 <input
                   type="email"
                   id="email"
@@ -48,7 +48,7 @@ const ContactForm = () => {
                 >
                   Email
                 </label>
-              </div> */}
+              </div>
               <div className="relative">
                 <input
                   type="tel"
@@ -65,7 +65,8 @@ const ContactForm = () => {
                 </label>
               </div>
             </div>
-            <div className="mt-4 w-full p-2">
+
+            <div className="mt-3 w-full p-2">
               <div className="relative">
                 <textarea
                   id="message"

@@ -10,7 +10,7 @@ const LogoIcon = () => {
         height={0}
         width={0}
         sizes="100vw"
-        className="w-80"
+        className="w-72"
       />
     </div>
   );

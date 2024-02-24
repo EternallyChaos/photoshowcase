@@ -14,11 +14,11 @@ const Header = () => {
       <div className="fixed w-full z-30">
         <div className="flex justify-between">
           <div className="">
-            {/* <LogoIcon /> */}
-            <div className="absolute logo bg-transparent text-5xl font-bold text-black mix-blend-screen px-2 "></div>
+            <LogoIcon />
+            {/* <div className="absolute logo bg-transparent text-5xl font-bold text-black mix-blend-screen px-2 "></div> */}
           </div>
           <div className="bg-gray-300 z-40">
-            <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+            {/* <Hamburger toggled={isOpen} size={20} toggle={setOpen} /> */}
           </div>
         </div>
       </div>
