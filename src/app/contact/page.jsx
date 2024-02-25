@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ImageFour from "/public/pexels-min-an-752842.jpg";
+import Logo from "/public/contactus/Logo.png";
 import ContactForm from "@/components/ContactForm";
 
 const Page = () => {
@@ -10,14 +10,14 @@ const Page = () => {
         <div className="mt-12 lg:mt-0 lg:h-screen relative flex justify-center items-center h-[400px] sm:h-[500px] md:h-[700px]">
           <Image
             alt="img"
-            src={ImageFour}
+            src={Logo}
             fill
             sizes="100vw"
             className="object-center object-cover p-4 lg:p-16 rounded-full max-w-full h-auto overflow-hidden"
           />
-          <div className="absolute bottom-0 left-0 right-0 top-0 grid place-items-center lg:text-4xl font-bold text-center">
+          {/* <div className="absolute bottom-0 left-0 right-0 top-0 grid place-items-center lg:text-4xl font-bold text-center">
             Contact Us
-          </div>
+          </div> */}
         </div>
         <div>
           <ContactForm />
@@ -34,7 +34,7 @@ const Page = () => {
             </p>
             <p className="max-w-xl mt-4 text-gray-600">
               Email us and let’s learn more about each other -
-              info@nordicaphotography.com
+              ddtafilms2021@gmail.com
             </p>
           </div>
           <div className="mt-16">
@@ -43,16 +43,17 @@ const Page = () => {
             </p>
             <p className="max-w-xl mt-4 text-gray-600 text-center">
               We can provide you collection information when you contact us -
-              info@nordicaphotography.com
+              ddtafilms2021@gmail.com
             </p>
           </div>
           <div className="mt-16">
             <p className="font-ptSerif-medium font-normal leading-relaxed text-center italic text-3xl lg:text-4xl max-w-xl text-gray-500">
-              Do you work internationally?
+              Do you work Pan India?
             </p>
             <p className="max-w-xl mt-4 text-gray-600 text-center">
-              Yes. We’ve documented hundreds of weddings since going full-time
-              in 2009, and the majority have been international.
+              Yes. We’ve documented lots of weddings since going full-time in
+              2021. Although based in Kolkata our majority works have been
+              outside.
             </p>
           </div>
           <div className="mt-16">

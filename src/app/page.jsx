@@ -1,12 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import Image from "next/image";
 import HomeImage from "/public/home.jpg";
-import ImageOne from "/public/pexels-asad-photo-maldives-1024993.jpg";
-import ImageTwo from "/public/pexels-dimitri-kuliuk-1488318.jpg";
-import ImageThree from "/public/pexels-jeremy-wong-1043902.jpg";
-import ImageFour from "/public/pexels-min-an-752842.jpg";
-import ImageFive from "/public/pexels-pixabay-219776.jpg";
 
 import HimachalImageOne from "/public/himachal/1.jpg";
 import OdishaImageOne from "/public/odisha/1.jpg";
@@ -26,7 +22,9 @@ export default function Home() {
   const openModal = () => {
     setIsOpen(true);
   };
-  const videoId = "CwTM0JfUsGs?si=9A8C-BuBbmFHWAAl";
+  // const videoId = "CwTM0JfUsGs?si=9A8C-BuBbmFHWAAl";// youtube video id
+  const videoId = "767325081";// vimeo video id
+  
 
   return (
     <main className="">

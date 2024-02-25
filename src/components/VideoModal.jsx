@@ -60,13 +60,14 @@ const VideoModal = ({ isOpen, setIsOpen, videoId }) => {
                         className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium"
                         onClick={closeModal}
                       >
-                        Close Film
+                        Close
                       </button>
                     </div>
                   </div>
                   <iframe
                     className="w-full h-[90vh] aspect-auto"
-                    src={`https://www.youtube.com/embed/${videoId}`}
+                    // src={`https://www.youtube.com/embed/${videoId}`} // youtube video
+                    src={`https://player.vimeo.com/video/${videoId}`} // vimeo video
                   ></iframe>
                 </Dialog.Panel>
               </Transition.Child>

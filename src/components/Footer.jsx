@@ -24,17 +24,12 @@ const Footer = () => {
 
         <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
-            <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75">
-                
-                © 2020-2024 Photography
-              </a>
+            <li className="text-gray-500">
+                © 2024-2028 DDTA
             </li>
 
-            <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75">
-                Email Us
-              </a>
+            <li className="text-gray-500">
+                Email Us @ <a href="mailto: ddtafilms2021@gmail.com" className="text-gray-500 transition hover:opacity-75">ddtafilms2021@gmail.com</a>
             </li>
 
             <li>

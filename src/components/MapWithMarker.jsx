@@ -59,13 +59,18 @@ const MapChart = ({ data }) => {
       <Geographies geography={geoUrl}>
         {({ geographies }) =>
           geographies.map((geo, key) => (
-            <Geography key={key} geography={geo} fill="#EEE" stroke="#DDD" />
+            <Geography key={key} geography={geo} fill="#EEE" stroke="#DDD" style={{
+              default: { outline: "none" },
+              hover: { outline: "none" },
+              pressed: { outline: "none" },
+            }}/>
           ))
         }
       </Geographies>
       {data?.map(({ coordinates, id }, index) => (
         <Link href={`/stories/${id}`} key={index}>
           <Marker coordinates={coordinates}>
+            <circle r={10} fill="#f5d9cf" stroke="#fff" strokeWidth={1} />
             <circle r={3} fill="#F00" stroke="#fff" strokeWidth={1} />
             {/* <text
             textAnchor="middle"
